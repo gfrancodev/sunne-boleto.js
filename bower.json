@@ -3,7 +3,7 @@
   "description": "Renderizador de código de barras para boletos bancários",
   "main": "lib/boleto.min.js",
   "authors": [
-    "Gustavo Franco <guilhermeama@gmail.com> (https://github.com/gfrancodev)"
+    "Gustavo Franco <gustavo.franco@sunnebrasil.com.br> (https://github.com/gfrancodev)"
   ],
   "license": "MIT",
   "keywords": [
