@@ -1,10 +1,10 @@
 # boleto.js
 
-[![npm version](https://badge.fury.io/js/boleto.js.svg)](https://badge.fury.io/js/boleto.js)
-![Build Status](https://github.com/guilhermearaujo/boleto.js/workflows/CI/badge.svg)
-[![Code Climate](https://codeclimate.com/github/guilhermearaujo/boleto.js/badges/gpa.svg)](https://codeclimate.com/github/guilhermearaujo/boleto.js)
-[![Test Coverage](https://codeclimate.com/github/guilhermearaujo/boleto.js/badges/coverage.svg)](https://codeclimate.com/github/guilhermearaujo/boleto.js/coverage)
-[![Inline docs](http://inch-ci.org/github/guilhermearaujo/boleto.js.svg?branch=main)](http://inch-ci.org/github/guilhermearaujo/boleto.js)
+[![npm version](https://badge.fury.io/js/sunne-boleto.js.svg)](https://badge.fury.io/js/sunne-boleto.js)
+![Build Status](https://github.com/gfrancodev/sunne-boleto.js/workflows/CI/badge.svg)
+[![Code Climate](https://codeclimate.com/github/gfrancodev/sunne-boleto.js/badges/gpa.svg)](https://codeclimate.com/github/gfrancodev/sunne-boleto.js)
+[![Test Coverage](https://codeclimate.com/github/gfrancodev/sunne-boleto.js/badges/coverage.svg)](https://codeclimate.com/github/gfrancodev/sunne-boleto.js/coverage)
+[![Inline docs](http://inch-ci.org/github/gfrancodev/sunne-boleto.js.svg?branch=main)](http://inch-ci.org/github/gfrancodev/sunne-boleto.js)
 
 Renderizador de código de barras para boletos bancários
 
@@ -66,7 +66,9 @@ Além de renderizar o código de barras, o boleto.js também possui alguns méto
 .bank()           // Itaú
 .currency()       // { code: 'BRL', symbol: 'R$', decimal: ',' }
 .expirationDate() // Sun Nov 15 2020 22:00:00 GMT-0200 (BRST)
+
+.renderSVG() // <svg width="100" height="150" ...></svg>
 ```
 ## Licença
 
-MIT © Guilherme Araújo
+MIT © Gustavo Franco

@@ -1,8 +1,9 @@
 {
-  "name": "boleto.js",
-  "version": "1.1.4",
+  "name": "sunne-boleto.js",
+  "version": "1.1.5",
   "description": "Renderizador de código de barras para boletos bancários",
-  "main": "lib/boleto.min.js",
+  "main": "./src/index.js",
+  "types": "./@types/index.d.ts",
   "files": [
     "/lib",
     "/src"
@@ -15,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guilhermearaujo/boleto.js.git"
+    "url": "git+https://github.com/gfrancodev/sunne-boleto.js.git"
   },
   "keywords": [
     "boleto",
@@ -23,12 +24,12 @@
     "barras",
     "barcode"
   ],
-  "author": "Guilherme Araújo <guilhermeama@gmail.com> (https://github.com/guilhermearaujo)",
+  "author": "Gustavo Franco <guilhermeama@gmail.com> (https://github.com/gfrancodev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/guilhermearaujo/boleto.js/issues"
+    "url": "https://github.com/gfrancodev/sunne-boleto.js/issues"
   },
-  "homepage": "https://github.com/guilhermearaujo/boleto.js#readme",
+  "homepage": "https://github.com/gfrancodev/sunne-boleto.js#readme",
   "dependencies": {
     "xmlserializer": "^0.6.0"
   },

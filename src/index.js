@@ -1,6 +1,12 @@
+const { TextEncoder, TextDecoder } = require('util');
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
 const SVG = require('./svg');
 const ITF = require('./itf');
 const { modulo11 } = require('./helpers');
+const dom = require('jsdom');
+const { JSDOM } = dom;
+
 
 class Boleto {
   /**
@@ -192,6 +198,25 @@ class Boleto {
   toSVG(selector) {
     const stripes = ITF.encode(this.barcode());
     return new SVG(stripes).render(selector);
+  }
+
+  /**
+   * Renders the bank slip as a child of the provided jsdom
+   *
+   *
+   * @see {@link SVG#render}
+   */
+  renderSVG(height) {
+    try {
+      const barcode = this.barcode()
+      global.document = new JSDOM('').window.document;
+      if (barcode && barcode.match(/^\d/)) {
+        const bar = this.toSVG();
+        return bar.split('height="100"').join(`height="${height ?? 150}"`);
+      }      
+    } catch (error) {
+      throw  new Error('Failed to create barcode')
+    }
   }
 }
 

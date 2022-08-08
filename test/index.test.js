@@ -1,4 +1,4 @@
-const Boleto = require('../src/boleto');
+const Boleto = require('../src/index');
 
 describe('Boleto.js', () => {
   const validBankslipNumber = '34195000080123320318964221470004584410000002000';
@@ -142,4 +142,8 @@ describe('Boleto.js', () => {
       expect(getBankslip().toSVG('#fake-wrapper')).toBeNull();
     });
   });
+
+  describe('#renderSVG', () => {
+    expect(getBankslip().renderSVG()).toMatch(/svg/)
+  }) 
 });

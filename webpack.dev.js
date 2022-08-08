@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/boleto.js',
+  entry: './src/sunne-boleto.js',
   mode: 'development',
   optimization: {
     minimizer: [],
